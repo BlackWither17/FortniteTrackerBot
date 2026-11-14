@@ -8,6 +8,8 @@ export default {
   options: [],
   permissions: [],
   botPerms: [],
+  integration_types: [0, 1],
+  contexts: [0,1,2],
   run: async (client, interaction) => {
     const options = [];
     for(const command of client.allCommands){

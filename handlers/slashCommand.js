@@ -50,11 +50,14 @@ export default async (client) => {
   logger.log(chalk.red(table.toString()));
 
   try {
+      /*
     await rest.put(
       Routes.applicationGuildCommands(process.env.CLIENT_ID, process.env.GUILD_ID),
       { body: slashCommands },
     );
     logger.success("Slash Commands • Registered");
+    */
+      logger.warn("Private slash Command are currently disabled")
   } catch (error) {
     logger.error(error);
   }

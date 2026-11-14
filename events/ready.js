@@ -3,11 +3,8 @@ import client from "../index.js";
 import logger from "../functions/logger.js";
 
 client.on("clientReady", () => {
-  const guild = client.guilds.cache.get(process.env.GUILD_ID);
   const activities = [
     { name: "/help", type: ActivityType.Listening },
-    { name: `${guild.channels.cache.size} Channels`, type: ActivityType.Playing },
-    { name: `${guild.members.cache.size} Users`, type: ActivityType.Watching },
   ];
   const status = [
     "online",

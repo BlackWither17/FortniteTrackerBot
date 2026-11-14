@@ -12,6 +12,8 @@ export default {
   options: [],
   permissions: [],
   botPerms: [],
+  integration_types: [0, 1],
+  contexts: [0,1,2],
   run: async (client, interaction) => {
     const embed = new EmbedBuilder()
       .setTitle("🤖 » **__BOT INFO__**")

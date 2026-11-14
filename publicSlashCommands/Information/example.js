@@ -26,6 +26,8 @@ export default {
   ],
   permissions: [PermissionFlagsBits.ManageChannels],
   botPerms: [],
+  integration_types: [0, 1],
+  contexts: [0,1,2],
   run: async (client, interaction) => {
     const chosenInteraction = interaction.options.getString("interaction");
     if(chosenInteraction === "modal"){
